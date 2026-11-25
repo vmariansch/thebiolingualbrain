@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An interactive guide to the bilingual brain, language control, cognition, aging and cognitive reserve.">
+  <title>The Bilingual Brain — Two Languages, One Mind</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="progress-bar" id="progressBar"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="The Bilingual Brain home"><span class="brand-mark">B</span><span>THE BILINGUAL BRAIN</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#mechanism">How it works</a>
+      <a href="#evidence">The evidence</a>
+      <a href="#aging">Aging</a>
+      <a href="#quiz">Quiz</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> NEUROSCIENCE / LANGUAGE / COGNITION</p>
+        <h1>Two languages.<br><em>One</em> incredible brain.</h1>
+        <p class="hero-copy">What happens inside the mind when more than one language is always in the mix? Explore the brain's language-control system, the science behind the “bilingual advantage,” and what changes as we age.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#mechanism">Explore the brain <span>↘</span></a>
+          <a class="text-link" href="#evidence">See what research says <span>→</span></a>
+        </div>
+        <div class="hero-note"><span class="note-line"></span><span>THE BIG QUESTION</span><strong>Does bilingualism reshape the brain — and does that change cognition beyond language?</strong></div>
+      </div>
+      <div class="hero-visual" aria-label="Abstract illustration of two languages interacting in a brain">
+        <div class="brain-glow"></div>
+        <svg class="brain-art" viewBox="0 0 520 430" role="img" aria-label="Stylized brain illustration with two interwoven language pathways">
+          <defs>
+            <linearGradient id="brainFill" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff6f61"/><stop offset="1" stop-color="#ffb45e"/></linearGradient>
+            <linearGradient id="pathA" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffcf70"/><stop offset="1" stop-color="#ff6f61"/></linearGradient>
+            <linearGradient id="pathB" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6de0d2"/><stop offset="1" stop-color="#55a8f5"/></linearGradient>
+          </defs>
+          <path class="brain-shape" d="M258 72c-29-34-87-31-111 8-48-8-84 30-78 73-35 23-34 77-3 101-10 47 24 83 69 79 22 34 69 39 99 13 17 9 40 9 57-1 30 27 78 21 99-13 45 4 79-32 69-79 31-24 32-78-3-101 6-43-30-81-78-73-24-39-82-42-111-8-3 0-6 0-9 1z" fill="url(#brainFill)" opacity=".92"/>
+          <g class="brain-lines" fill="none" stroke="#7b2d38" stroke-width="5" stroke-linecap="round" opacity=".45">
+            <path d="M250 77c-27 24-27 50-6 68s20 36-2 52-23 44 0 60"/>
+            <path d="M144 103c34 5 46 25 38 49s2 38 25 44"/>
+            <path d="M91 167c30-8 48 4 51 29s18 35 40 34"/>
+            <path d="M112 259c28-19 51-12 59 11s30 30 53 18"/>
+            <path d="M192 330c-5-27 7-43 31-46s35-20 29-43"/>
+            <path d="M275 78c27 24 27 50 6 68s-20 36 2 52 23 44 0 60"/>
+            <path d="M376 103c-34 5-46 25-38 49s-2 38-25 44"/>
+            <path d="M429 167c-30-8-48 4-51 29s-18 35-40 34"/>
+            <path d="M408 259c-28-19-51-12-59 11s-30 30-53 18"/>
+            <path d="M328 330c5-27-7-43-31-46s-35-20-29-43"/>
+          </g>
+          <path class="route route-a" d="M95 125C170 58 210 165 258 204S350 319 429 250"/>
+          <path class="route route-b" d="M90 275C163 347 202 248 258 204S350 71 430 135"/>
+          <circle cx="258" cy="204" r="12" fill="#fff7e9"/><circle cx="258" cy="204" r="5" fill="#182b3b"/>
+          <g class="brain-label"><circle cx="95" cy="125" r="6"/><text x="58" y="105">L1</text><circle cx="429" cy="250" r="6"/><text x="443" y="270">L1</text><circle cx="90" cy="275" r="6"/><text x="45" y="300">L2</text><circle cx="430" cy="135" r="6"/><text x="445" y="125">L2</text></g>
+        </svg>
+        <div class="float-tag tag-left"><span class="tag-dot coral"></span> LANGUAGE A</div>
+        <div class="float-tag tag-right"><span class="tag-dot aqua"></span> LANGUAGE B</div>
+        <div class="visual-caption">Two systems active.<br><b>One control network.</b></div>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO DISCOVER</span><span class="scroll-arrow">↓</span><span>01 / 05</span></div>
+    </section>
+
+    <section class="intro section-pad">
+      <div class="section-kicker">01 — THE STARTING POINT</div>
+      <div class="intro-grid">
+        <h2>Your brain doesn't<br>simply <em>switch</em><br>languages off.</h2>
+        <div class="intro-text"><p>When bilingual people use one language, the other one does not disappear. Research points to <strong>parallel activation</strong>: both languages can remain active, even when only one is being spoken or understood.</p><p>That creates a selection challenge. The brain has to manage competing information and keep the intended language on track.</p><div class="fact-line"><span class="fact-number">02</span><span>languages active<br>at the same time</span><span class="fact-arrow">↗</span></div></div>
+      </div>
+    </section>
+
+    <section class="mechanism section-pad dark-section" id="mechanism">
+      <div class="section-kicker light-kicker">02 — INSIDE THE SYSTEM</div>
+      <div class="section-heading"><h2>The brain's<br><em>language traffic</em><br>controller.</h2><p>There is no single “bilingual button.” A wider control network helps select a language, resolve competition and switch when needed.</p></div>
+      <div class="network-layout">
+        <div class="network-visual">
+          <div class="network-ring ring-a"></div><div class="network-ring ring-b"></div>
+          <div class="network-core"><span>CONTROL<br>NETWORK</span><b>↔</b></div>
+          <span class="node node-1">IFG</span><span class="node node-2">pre-SMA</span><span class="node node-3">ACC</span><span class="node node-4">Caudate</span><span class="node node-5">IPL</span>
+        </div>
+        <div class="network-info">
+          <p class="micro-label">SELECT A BRAIN REGION</p>
+          <div class="region-list" role="tablist" aria-label="Brain regions">
+            <button class="region-tab active" data-region="ifg" role="tab" aria-selected="true"><span>01</span> Left inferior frontal gyrus <b>↗</b></button>
+            <button class="region-tab" data-region="presma" role="tab" aria-selected="false"><span>02</span> pre-SMA <b>↗</b></button>
+            <button class="region-tab" data-region="acc" role="tab" aria-selected="false"><span>03</span> Anterior cingulate cortex <b>↗</b></button>
+            <button class="region-tab" data-region="caudate" role="tab" aria-selected="false"><span>04</span> Caudate nucleus <b>↗</b></button>
+            <button class="region-tab" data-region="ipl" role="tab" aria-selected="false"><span>05</span> Inferior parietal lobule <b>↗</b></button>
+          </div>
+          <div class="region-description" aria-live="polite"><span class="micro-label">WHAT IT DOES</span><h3 id="regionTitle">Left inferior frontal gyrus</h3><p id="regionText">Part of the network involved in selecting and producing the intended language while managing competition from the other language.</p></div>
+        </div>
+      </div>
+      <div class="network-footnote"><span>IMPORTANT DISTINCTION</span><p>This is a <strong>domain-general control circuit</strong> recruited for language selection — not a dedicated “bilingual module.”</p></div>
+    </section>
+
+    <section class="adaptive section-pad">
+      <div class="section-kicker">03 — CONTEXT CHANGES THE DEMAND</div>
+      <div class="adaptive-top"><h2>Not every bilingual<br>life is the <em>same.</em></h2><p>The Adaptive Control Hypothesis proposes that language-control demands depend on the way people use their languages in everyday interactions.</p></div>
+      <div class="context-cards">
+        <article class="context-card"><div class="context-number">01 / SINGLE-LANGUAGE</div><div class="context-icon">A<span>·</span>A</div><h3>One language at a time</h3><p>People mostly use one language in a given setting and keep the other less relevant.</p><div class="context-bar"><span style="width:35%"></span></div><small>CONTROL DEMAND · CONTEXT-DEPENDENT</small></article>
+        <article class="context-card featured"><div class="context-number">02 / DUAL-LANGUAGE</div><div class="context-icon">A <span>↔</span> B</div><h3>Choose between languages</h3><p>Both languages may be used in the same environment, with the conversation partner shaping the choice.</p><div class="context-bar"><span style="width:70%"></span></div><small>CONTROL DEMAND · CONTEXT-DEPENDENT</small></article>
+        <article class="context-card"><div class="context-number">03 / DENSE CODE-SWITCHING</div><div class="context-icon">A<span>+</span>B</div><h3>Mixing comes naturally</h3><p>Speakers fluidly mix languages within a conversation, sometimes within a sentence.</p><div class="context-bar"><span style="width:52%"></span></div><small>CONTROL DEMAND · CONTEXT-DEPENDENT</small></article>
+      </div>
+      <p class="small-caveat">The bars are illustrative, not measured scientific scores. Different contexts involve different control demands; they should not be read as a universal ranking.</p>
+    </section>
+
+    <section class="evidence section-pad" id="evidence">
+      <div class="section-kicker">04 — WHAT THE EVIDENCE SAYS</div>
+      <div class="evidence-heading"><h2>Real changes.<br><em>Careful claims.</em></h2><p>Some findings are well supported. Others remain debated. The difference matters.</p></div>
+      <div class="evidence-grid">
+        <article class="evidence-card evidence-positive"><div class="evidence-status">SUPPORTED FINDINGS <span>●</span></div><h3>Brain structure & language processing</h3><ul><li>Studies report structural differences, including grey-matter differences in the left inferior parietal cortex and white-matter differences.</li><li>Some structural patterns vary with proficiency and age of acquisition.</li><li>Bilingual infants show earlier development of some attentional-control abilities and functional differences in speech-sound discrimination.</li></ul><div class="card-mark">01</div></article>
+        <article class="evidence-card evidence-debate"><div class="evidence-status">ACTIVE CONTROVERSY <span>◐</span></div><h3>The “bilingual advantage”</h3><ul><li>Some studies report stronger inhibition, switching or updating skills.</li><li>A large meta-analysis of adult studies found no reliable overall executive-function advantage.</li><li>Small samples, varied tasks and publication bias may help explain positive findings.</li></ul><div class="card-mark">02</div></article>
+        <article class="evidence-card evidence-reserve"><div class="evidence-status">IMPORTANT DISTINCTION <span>↗</span></div><h3>Cognitive reserve & dementia</h3><ul><li>Some studies report later onset of dementia symptoms among bilingual people.</li><li>Later symptoms do not mean less brain pathology or that bilingualism prevents dementia.</li><li>Reserve may help maintain function despite disease-related changes.</li></ul><div class="card-mark">03</div></article>
+      </div>
+      <div class="myth-strip"><span class="myth-icon">!</span><div><span class="micro-label">THE TRAP TO AVOID</span><h3>Bilingualism is not a universal cognitive upgrade.</h3><p>Language-related and structural findings are meaningful, but broad claims about better executive function are not settled science.</p></div></div>
+    </section>
+
+    <section class="aging section-pad dark-section" id="aging">
+      <div class="section-kicker light-kicker">05 — THE BILINGUAL BRAIN OVER TIME</div>
+      <div class="aging-heading"><h2>Two languages.<br>A lifetime of <em>adaptation.</em></h2><p>Aging affects language and cognition. For bilingual people, the story can be more complex because each language may follow a different path.</p></div>
+      <div class="aging-columns">
+        <div class="aging-column">
+          <div class="aging-symbol">⌁</div><span class="micro-label">LANGUAGE & AGING</span><h3>Words can be harder to find.</h3><p>Healthy older adults often experience more difficulty with lexical retrieval — finding the word they want — and understanding complex spoken material, especially when speech is fast or context is limited.</p><div class="example-box"><span>EVER HAD THIS MOMENT?</span><strong>“I know the word… it's right there… starts with a B…”</strong><small>A classic tip-of-the-tongue experience.</small></div>
+        </div>
+        <div class="aging-column">
+          <div class="aging-symbol">⇄</div><span class="micro-label">L1 / L2 DIFFERENCES</span><h3>Both languages may not age alike.</h3><p>Some findings suggest that a later-acquired language (L2) may show age-related retrieval changes earlier than the first language (L1). But proficiency, education, language use and life history all matter.</p><div class="example-box"><span>ONE STUDY IN THE CHAPTER</span><strong>78 Spanish–English bilingual adults</strong><small>Age correlated with lexical-retrieval performance in English (L2), but not Spanish (L1), in this sample.</small></div>
+        </div>
+        <div class="aging-column">
+          <div class="aging-symbol">◌</div><span class="micro-label">COGNITIVE RESERVE</span><h3>Symptoms are not pathology.</h3><p>Some research has found later onset of dementia symptoms in bilingual groups. The cognitive-reserve interpretation is that function may be maintained for longer despite underlying disease — not that the disease is prevented.</p><div class="example-box"><span>KEEP THE CLAIM PRECISE</span><strong>Later symptom onset ≠ less pathology.</strong><small>Other factors, including education, immigration history and socioeconomic status, may influence results.</small></div>
+        </div>
+      </div>
+      <div class="aging-quote"><span>“</span><p>The two languages of a bilingual person are not simply two monolinguals living in one mind.</p><small>— A key idea in bilingual language research</small></div>
+    </section>
+
+    <section class="research section-pad">
+      <div class="section-kicker">06 — HOW TO READ A STUDY</div>
+      <div class="research-grid"><div><h2>Ask better<br><em>questions.</em></h2><p>Before accepting a headline about bilingualism, check how the research was designed.</p></div>
+        <div class="checklist">
+          <div class="check-item"><span>01</span><div><h3>Who counts as bilingual?</h3><p>Look for age of acquisition, proficiency, daily language use and switching habits. Early bilinguals and late high-proficiency bilinguals are not the same group.</p></div></div>
+          <div class="check-item"><span>02</span><div><h3>How strong is the study?</h3><p>Check sample size, task design and whether the analysis was pre-registered. Small samples and different tasks can make studies hard to compare.</p></div></div>
+          <div class="check-item"><span>03</span><div><h3>What exactly is the dementia claim?</h3><p>Does the paper say bilingualism prevents dementia, reduces pathology or delays symptom onset? These are three different claims.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quiz-section section-pad" id="quiz">
+      <div class="section-kicker">07 — CHECK YOUR UNDERSTANDING</div>
+      <div class="quiz-header"><h2>Brain check<span>.</span></h2><p>Three quick questions. No lab coat required.</p></div>
+      <div class="quiz-box">
+        <div class="quiz-progress"><span id="quizProgress"></span></div>
+        <div class="quiz-meta"><span id="questionCount">QUESTION 01 / 03</span><span id="scoreLabel">SCORE: 0</span></div>
+        <h3 id="questionText">When a bilingual person speaks one language, what can happen to the other language?</h3>
+        <div class="answers" id="answers">
+          <button class="answer" data-answer="0">It becomes completely inactive.</button>
+          <button class="answer" data-answer="1">It can remain active in parallel.</button>
+          <button class="answer" data-answer="2">It is temporarily erased from memory.</button>
+        </div>
+        <div class="quiz-feedback" id="quizFeedback" aria-live="polite"></div>
+        <div class="quiz-footer"><span id="quizHint">CHOOSE ONE ANSWER</span><button class="button button-primary" id="nextQuestion" disabled>Next question <span>→</span></button></div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="closing-orb"></div><span class="eyebrow"><span class="eyebrow-dot"></span> THE TAKEAWAY</span>
+      <h2>A more complex brain story<br>is a more <em>interesting</em> one.</h2>
+      <p>Bilingualism shapes language experience and is associated with measurable brain differences. Its wider cognitive effects depend on context, age, experience and the quality of the evidence.</p>
+      <a href="#home" class="button button-light">Back to the beginning ↑</a>
+    </section>
+  </main>
+  <footer><a class="brand" href="#home"><span class="brand-mark">B</span><span>THE BILINGUAL BRAIN</span></a><span>AN INTERACTIVE LEARNING PROJECT</span><span>LANGUAGE × BRAIN × TIME</span></footer>
+</body>
+</html>
